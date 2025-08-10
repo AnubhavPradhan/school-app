@@ -1,103 +1,183 @@
-import Image from "next/image";
+import Header from '@/components/Header';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 via-blue-50 to-purple-50">
+      <Header />
+      <main className="pt-16">
+      {/* Hero Section */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+          <div className="flex-1 space-y-6">
+            <h1 className="text-5xl font-bold text-indigo-900 leading-tight bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text">
+              Welcome to School App
+            </h1>
+            <p className="text-xl text-gray-600 max-w-2xl">
+              Your comprehensive solution for modern school management. Experience education transformed through technology.
+            </p>
+            <div className="flex gap-4 pt-4">
+              <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all transform hover:scale-105 shadow-lg">
+                Get Started
+              </button>
+              <button className="px-6 py-3 border-2 border-transparent bg-gradient-to-r from-pink-500 to-orange-500 text-white rounded-lg hover:from-pink-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div className="flex-1 flex justify-center">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <img src="/window.svg" alt="Features" className="w-12 h-12 mb-4" />
+                <h3 className="text-lg font-semibold">Smart Dashboard</h3>
+                <p className="text-gray-500">Manage everything from one place</p>
+              </div>
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <img src="/globe.svg" alt="Global" className="w-12 h-12 mb-4" />
+                <h3 className="text-lg font-semibold">Global Access</h3>
+                <p className="text-gray-500">Access from anywhere, anytime</p>
+              </div>
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <img src="/file.svg" alt="Reports" className="w-12 h-12 mb-4" />
+                <h3 className="text-lg font-semibold">Easy Reports</h3>
+                <p className="text-gray-500">Generate reports instantly</p>
+              </div>
+              <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <img src="/vercel.svg" alt="Performance" className="w-12 h-12 mb-4" />
+                <h3 className="text-lg font-semibold">Fast Performance</h3>
+                <p className="text-gray-500">Lightning-fast experience</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      {/* Statistics Section */}
+      <div className="bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white py-16 transform skew-y-[-2deg] shadow-xl">
+        <div className="container mx-auto px-4 transform skew-y-[2deg]">
+          <h2 className="text-3xl font-bold text-center mb-12">Trusted by Schools Worldwide</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div className="space-y-2">
+              <p className="text-4xl font-bold">1000+</p>
+              <p className="text-blue-200">Schools</p>
+            </div>
+            <div className="space-y-2">
+              <p className="text-4xl font-bold">50k+</p>
+              <p className="text-blue-200">Teachers</p>
+            </div>
+            <div className="space-y-2">
+              <p className="text-4xl font-bold">500k+</p>
+              <p className="text-blue-200">Students</p>
+            </div>
+            <div className="space-y-2">
+              <p className="text-4xl font-bold">98%</p>
+              <p className="text-blue-200">Satisfaction Rate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* School Gallery Section */}
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">Our School Environment</h2>
+        <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+          Experience the modern learning environments and facilities that make our schools stand out
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="group relative overflow-hidden rounded-xl aspect-[4/3]">
+            <img 
+              src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+              alt="Modern Classroom"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-lg font-semibold">Modern Classrooms</h3>
+                <p className="text-sm">State-of-the-art learning spaces</p>
+              </div>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-xl aspect-[4/3]">
+            <img 
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+              alt="Computer Lab"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-lg font-semibold">Computer Labs</h3>
+                <p className="text-sm">Digital learning facilities</p>
+              </div>
+            </div>
+          </div>
+          <div className="group relative overflow-hidden rounded-xl aspect-[4/3]">
+            <img 
+              src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+              alt="Library"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-lg font-semibold">Modern Library</h3>
+                <p className="text-sm">Extensive learning resources</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Features Section */}
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text">Key Features</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-gradient-to-br from-white to-indigo-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:transform hover:scale-105">
+            <h3 className="text-xl font-semibold mb-4">Student Management</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li>• Complete student profiles</li>
+              <li>• Attendance tracking</li>
+              <li>• Performance analytics</li>
+              <li>• Behavioral records</li>
+            </ul>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold mb-4">Teacher Tools</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li>• Lesson planning</li>
+              <li>• Grade management</li>
+              <li>• Resource sharing</li>
+              <li>• Parent communication</li>
+            </ul>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold mb-4">Administration</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li>• Financial management</li>
+              <li>• Staff scheduling</li>
+              <li>• Resource allocation</li>
+              <li>• Report generation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Call to Action Section */}
+      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYSkiLz48L3N2Zz4=')] opacity-30"></div>
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-4xl font-bold mb-6 text-transparent bg-gradient-to-r from-yellow-200 to-pink-200 bg-clip-text">Ready to Transform Your School?</h2>
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+            Join thousands of schools that have already modernized their management with School App
+          </p>
+          <div className="flex gap-4 justify-center">
+            <button className="px-8 py-4 bg-white bg-opacity-95 text-indigo-600 rounded-lg font-semibold hover:bg-opacity-100 transition-all transform hover:scale-105 shadow-lg">
+              Start Free Trial
+            </button>
+            <button className="px-8 py-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white rounded-lg font-semibold hover:from-pink-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
+              Schedule Demo
+            </button>
+          </div>
+        </div>
+      </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
