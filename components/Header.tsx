@@ -32,10 +32,10 @@ export default function Header() {
             </nav>
           </div>
           <div className="flex items-center space-x-4">
-            <button className="px-4 py-2 text-sm bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all">
+            <button className="px-4 py-2 text-sm bg-gradient-to-r from-cyan-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-red-700 transition-all">
               Student Portal
             </button>
-            <button className="px-4 py-2 text-sm border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors">
+            <button className="px-4 py-2 text-sm bg-gradient-to-r from-green-600 to-cyan-600 text-white rounded-lg hover:from-blue-700 hover:to-red-700 transition-all">
               Parent Portal
             </button>
           </div>

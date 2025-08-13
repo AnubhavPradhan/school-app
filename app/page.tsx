@@ -28,22 +28,22 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <img src="/window.svg" alt="Features" className="w-12 h-12 mb-4" />
-                <h3 className="text-lg font-semibold">Smart Dashboard</h3>
+                <h3 className="text-lg font-semibold text-gray-500">Smart Dashboard</h3>
                 <p className="text-gray-500">Manage everything from one place</p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <img src="/globe.svg" alt="Global" className="w-12 h-12 mb-4" />
-                <h3 className="text-lg font-semibold">Global Access</h3>
+                <h3 className="text-lg font-semibold text-gray-500">Global Access</h3>
                 <p className="text-gray-500">Access from anywhere, anytime</p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <img src="/file.svg" alt="Reports" className="w-12 h-12 mb-4" />
-                <h3 className="text-lg font-semibold">Easy Reports</h3>
+                <h3 className="text-lg font-semibold text-gray-500">Easy Reports</h3>
                 <p className="text-gray-500">Generate reports instantly</p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <img src="/vercel.svg" alt="Performance" className="w-12 h-12 mb-4" />
-                <h3 className="text-lg font-semibold">Fast Performance</h3>
+                <h3 className="text-lg font-semibold text-gray-500">Fast Performance</h3>
                 <p className="text-gray-500">Lightning-fast experience</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">Our School Environment</h2>
         <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-          Experience the modern learning environments and facilities that make our schools stand out
+          Experience the modern learning environments and facilities that make our schools stand out.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="group relative overflow-hidden rounded-xl aspect-[4/3]">
@@ -98,7 +98,7 @@ export default function Home() {
           </div>
           <div className="group relative overflow-hidden rounded-xl aspect-[4/3]">
             <img 
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+              src="https://media.istockphoto.com/id/506340238/photo/pc-room.jpg?s=612x612&w=0&k=20&c=hClJ3bjnW6n8gXSNbotpe520ofrREJYlJNMElU5CWJA=" 
               alt="Computer Lab"
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
             />
@@ -129,8 +129,8 @@ export default function Home() {
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-transparent bg-clip-text">Key Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-gradient-to-br from-white to-indigo-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:transform hover:scale-105">
-            <h3 className="text-xl font-semibold mb-4">Student Management</h3>
+          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold mb-4 text-gray-600">Student Management</h3>
             <ul className="space-y-3 text-gray-600">
               <li>• Complete student profiles</li>
               <li>• Attendance tracking</li>
@@ -139,7 +139,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold mb-4">Teacher Tools</h3>
+            <h3 className="text-xl font-semibold mb-4 text-gray-600">Teacher Tools</h3>
             <ul className="space-y-3 text-gray-600">
               <li>• Lesson planning</li>
               <li>• Grade management</li>
@@ -148,7 +148,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold mb-4">Administration</h3>
+            <h3 className="text-xl font-semibold mb-4 text-gray-600">Administration</h3>
             <ul className="space-y-3 text-gray-600">
               <li>• Financial management</li>
               <li>• Staff scheduling</li>
@@ -169,10 +169,10 @@ export default function Home() {
           </p>
           <div className="flex gap-4 justify-center">
             <button className="px-8 py-4 bg-white bg-opacity-95 text-indigo-600 rounded-lg font-semibold hover:bg-opacity-100 transition-all transform hover:scale-105 shadow-lg">
-              Start Free Trial
+              Contact Us
             </button>
             <button className="px-8 py-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white rounded-lg font-semibold hover:from-pink-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
-              Schedule Demo
+              Schedule Meeting
             </button>
           </div>
         </div>

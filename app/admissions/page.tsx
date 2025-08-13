@@ -23,22 +23,22 @@ export default function Admissions() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
-                <h3 className="text-lg font-semibold mb-2">Submit Application</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-600">Submit Application</h3>
                 <p className="text-gray-600">Complete the online application form</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
-                <h3 className="text-lg font-semibold mb-2">Documentation</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-600">Documentation</h3>
                 <p className="text-gray-600">Provide required documents and records</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
-                <h3 className="text-lg font-semibold mb-2">Assessment</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-600">Assessment</h3>
                 <p className="text-gray-600">Complete placement assessment</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
-                <h3 className="text-lg font-semibold mb-2">Decision</h3>
+                <h3 className="text-lg font-semibold mb-2 text-gray-600">Decision</h3>
                 <p className="text-gray-600">Receive admission decision</p>
               </div>
             </div>
@@ -68,17 +68,21 @@ export default function Admissions() {
               </ul>
             </div>
           </div>
-
-          {/* CTA Section */}
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl shadow-lg p-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Apply?</h2>
-            <p className="text-xl mb-8">Start your journey with us today</p>
+        </div>
+        {/* Call to Action Section */}
+        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYSkiLz48L3N2Zz4=')] opacity-30"></div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h2 className="text-4xl font-bold mb-6 text-transparent bg-gradient-to-r from-yellow-200 to-pink-200 bg-clip-text">Ready to Apply?</h2>
+            <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+              Start your journey with us today
+            </p>
             <div className="flex gap-4 justify-center">
-              <button className="px-8 py-4 bg-white text-indigo-600 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
-                Start Application
+              <button className="px-8 py-4 bg-white bg-opacity-95 text-indigo-600 rounded-lg font-semibold hover:bg-opacity-100 transition-all transform hover:scale-105 shadow-lg">
+                Contact Us
               </button>
-              <button className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-indigo-700 transition-all">
-                Schedule Tour
+              <button className="px-8 py-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white rounded-lg font-semibold hover:from-pink-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
+                Schedule Meeting
               </button>
             </div>
           </div>

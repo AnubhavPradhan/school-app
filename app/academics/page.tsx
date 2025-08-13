@@ -57,17 +57,17 @@ export default function Academics() {
             <h2 className="text-3xl font-bold mb-6 text-center text-indigo-700">Curriculum Highlights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-indigo-600">Core Subjects</h3>
-                <ul className="space-y-2 text-gray-600">
+                <h3 className="text-xl font-semibold mb-4 text-indigo-600 text-center">Core Subjects</h3>
+                <ul className="space-y-2 text-gray-600 text-center">
                   <li>• Mathematics</li>
                   <li>• Science</li>
-                  <li>• English Language Arts</li>
+                  <li>• Computer Science</li>
                   <li>• Social Studies</li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-indigo-600">Specialty Programs</h3>
-                <ul className="space-y-2 text-gray-600">
+                <h3 className="text-xl font-semibold mb-4 text-indigo-600 text-center">Specialty Programs</h3>
+                <ul className="space-y-2 text-gray-600 text-center">
                   <li>• STEM Education</li>
                   <li>• Arts & Music</li>
                   <li>• Foreign Languages</li>
@@ -78,21 +78,40 @@ export default function Academics() {
           </div>
 
           {/* Academic Support */}
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold mb-6 text-center">Academic Support</h2>
+          <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-center text-indigo-700">Academic Support</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <h3 className="text-xl font-semibold mb-4">Tutoring</h3>
-                <p>One-on-one and group tutoring available for all subjects</p>
+                <h3 className="text-xl font-semibold mb-4 text-indigo-700">Tutoring</h3>
+                <p className="text-gray-600"> One-on-one and group tutoring available for all subjects</p>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-semibold mb-4">Learning Center</h3>
-                <p>Resource center with academic support specialists</p>
+                <h3 className="text-xl font-semibold mb-4 text-indigo-700">Learning Center</h3>
+                <p className="text-gray-600">Resource center with academic support specialists</p>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-semibold mb-4">Study Groups</h3>
-                <p>Peer-led study groups and academic workshops</p>
+                <h3 className="text-xl font-semibold mb-4 text-indigo-700">Study Groups</h3>
+                <p className="text-gray-600">Peer-led study groups and academic workshops</p>
               </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Call to Action Section */}
+        <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-16 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iYSIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBwYXR0ZXJuVHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjYSkiLz48L3N2Zz4=')] opacity-30"></div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h2 className="text-4xl font-bold mb-6 text-transparent bg-gradient-to-r from-yellow-200 to-pink-200 bg-clip-text">Ready to Transform Your School?</h2>
+            <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+              Join thousands of schools that have already modernized their management with School App
+            </p>
+            <div className="flex gap-4 justify-center">
+              <button className="px-8 py-4 bg-white bg-opacity-95 text-indigo-600 rounded-lg font-semibold hover:bg-opacity-100 transition-all transform hover:scale-105 shadow-lg">
+                Contact Us
+              </button>
+              <button className="px-8 py-4 bg-gradient-to-r from-pink-500 to-orange-500 text-white rounded-lg font-semibold hover:from-pink-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
+                Schedule Meeting
+              </button>
             </div>
           </div>
         </div>
